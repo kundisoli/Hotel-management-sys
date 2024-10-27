@@ -1,0 +1,31 @@
+body {
+    background-color: #f0f0f0;
+    margin: 0; /* Removes any default margin */
+    padding: 0; /* Removes any default padding */
+}
+
+/* Responsive adjustments for medium screens */
+@media (max-width: 1024px) {
+    body {
+        background-color: #f0f0f0;
+        padding-left: 3vw; /* Use vw (viewport width) for smoother scaling */
+        padding-right: 3vw;
+    }
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    body {
+        background-color: #f0f0f0;
+        padding: 2vw; /* Smaller padding for smaller screens */
+        align-items: center;
+    }
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 480px) {
+    body {
+        background-color: #f0f0f0;
+        padding: 2vw; /* Very small padding to fit the content within the mobile window */
+    }
+}

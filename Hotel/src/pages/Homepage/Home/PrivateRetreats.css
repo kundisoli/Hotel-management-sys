@@ -1,0 +1,157 @@
+.private-retreats {
+    background-color: #ffffff; 
+    padding: 3vh 9vh;
+    text-align: center; 
+    width: 100vh;
+    margin: auto;
+    margin-top: 3vh;
+   
+}
+.featured-properties h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-style: italic; /* Italicize the text as in the image */
+    font-size: 2vh; /* Adjust the font size to your preference */
+    color: #333; /* Adjust text color if necessary */
+    margin: 3vh 0; /* Add vertical margin to separate it from other content */
+    position: relative; /* Required for the pseudo-elements to be positioned correctly */
+}
+
+.featured-properties h3::before,
+.featured-properties h3::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #aaa; /* Set line style and color */
+    margin: 0 1vh; /* Space between the text and the lines */
+}
+
+
+
+.retreats-header {
+    margin-bottom: 3vh;
+}
+
+.retreats-header h1 {
+    font-size: 7vh; 
+    margin-bottom: 2vh; 
+    color: #001014; 
+    font-weight: 100; 
+}
+
+.retreats-header h2 {
+    font-size: 1.5vh; 
+    color: #555; 
+}
+
+.featured-properties {
+    margin: 0 auto; 
+    max-width: 1200px; 
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.property {
+    background-color: white; 
+    border-radius: 1vh; 
+    overflow: hidden;
+    box-shadow: none;
+    margin: 2vh; 
+    width: calc(25% - 4vh); /* Fixed width for all screen sizes */
+    text-align: left; 
+    position: relative; 
+}
+
+.property img {
+    width: 100%; 
+    height: 20vh; 
+    object-fit: cover; 
+}
+
+.property h4 {
+    font-size: 1.5vh; /* Title size */
+    margin: 1vh 0; /* Space above and below title */
+    color: #001014; /* Title color */
+}
+
+.property p {
+    color: #333; /* Description color */
+    font-size: 1.7vh; /* Font size */
+    margin-top: 0.5px; /* Closer to header */
+    line-height: 2vh;
+    text-align: justify;
+}
+
+.learn-more {
+    display: inline-block; /* Block for spacing */
+    margin: 1vh; /* Space around button */
+    color: #001014; /* Link color */
+    font-weight: bold; /* Bold link */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition */
+}
+
+.learn-more:hover {
+    color: #0056b3; /* Change color on hover */
+}
+
+button {
+    border-style: none;
+    background-color: white;
+}
+.country-header {
+    display: flex;
+    justify-content: space-between;
+    ;
+    margin-top: 2vh;
+    font-weight: 400;
+    
+  }
+  
+  .country-section {
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+  }
+  
+  .locations-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to new lines */
+   list-style: none; 
+   text-align:left;
+    padding: 0;
+    margin: 0;
+    gap: 2vh; /* Spacing between list items */
+  }
+  
+  .locations-list li {
+    flex-basis: 30%; /* Each item takes approximately 30% of the width */
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .locations-list li {
+      flex-basis: 50%; /* Single column layout for mobile */
+    }
+  }
+  
+  button {
+    background: none;
+    border: none;
+    font-size: 0.7rem;
+  
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  button:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,119 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: #297bd2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    
+}
+h1{
+    text-align: center;
+    justify-content: center;
+    font-weight: 40;
+}
+
+.intro h4 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.intro h1 {
+    margin: 20px 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px;
+    width: 250px;
+    height: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+    flex-grow: 1;
+    border: none;
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 25px;
+    outline: none;
+    color: #007BFF;
+}
+
+.search-input::placeholder {
+    color: #007BFF;
+}
+
+.search-bar svg {
+    font-size: 1.5rem;
+    color: #007BFF;
+}
+.section-link{
+    margin-top: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+.abt {
+    margin-top: 10vh;
+    padding: 20px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 20vh;
+    
+    margin-left: 40vh;
+    margin-right: 40vh;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    border: 30px solid transparent; 
+    line-height: 1.5rem;
+}
+.abt p{
+  font-size: 15px;
+}
+.stay {
+    padding: 20px 0;
+    display: flex; /* Use flexbox for layout */
+    justify-content: center;
+    align-items: stretch; /* Make columns stretch to the same height */
+    text-align: center;
+    margin-left: 40vh;
+    margin-right: 40vh;
+    border: 2px solid transparent; 
+}
+
+.column {
+    flex: 1; /* Make columns flexible */
+    margin: 10px; /* Add some spacing between columns */
+    background: lightgrey;
+    display: flex; /* Use flexbox inside the column */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Ensure content is spread out */
+    min-height: 400px; /* Set a minimum height for the columns */
+}
+
+.column img {
+    width: 100%; /* Make the image responsive */
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.column p {
+    margin-top: 10px;
+    flex-grow: 1; /* Make the paragraph expand and take remaining space */
+}
+.video-container{
+    margin-left: 40vh;
+    margin-top: 10vh;
+}

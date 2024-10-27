@@ -1,0 +1,105 @@
+/* Navbar basic styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #001014;
+    padding: 1vh 2vw;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .navbar-logo img {
+    width: 10vh;
+  }
+  
+  /* Navbar links */
+  .navbar-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-links ul li {
+    margin-left: 2vw;
+  }
+  
+  .navbar-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 2vh;
+    font-weight: bold;
+  }
+  
+  .navbar-links ul li a .current-page-icon {
+    margin-left: 1vh;
+    color: #ffa500; /* Color for the current page indicator */
+  }
+  
+ 
+  
+  /* Positioning Check Rates button */
+  .check-rates {
+    background-color: #ffa500;
+    border: none;
+    padding: 1vh 2vw;
+    color: white;
+    cursor: pointer;
+    margin-right: 2vw;
+  }
+  
+  /* Sign In and Language dropdown */
+  .sign-in, .language-dropdown {
+    color: white;
+    margin-left: 1vw;
+  }
+  
+  /* Hamburger icon */
+  .hamburger {
+    display: none; /* Hidden on larger screens */
+    cursor: pointer;
+  }
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .navbar-links {
+      position: fixed; /* Fixed position to cover the whole screen */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; /* Full height */
+      font-size: 10vh;
+      background-color: rgba(0, 0, 0, 0.8); /* Darker background */
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Center items vertically */
+      align-items: center;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
+      z-index: 999; /* Ensure it’s on top */
+    }
+  
+    .navbar-links.active {
+      transform: translateX(0);
+    }
+  
+    .navbar-links ul {
+      flex-direction: column;
+      text-align: center;
+      padding: 0; /* Remove padding */
+    }
+  
+    .navbar-links ul li {
+      margin: 0; /* Remove margin between links */
+    }
+  
+   
+  }
